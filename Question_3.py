@@ -1,0 +1,16 @@
+
+
+def power(x, y):
+    return x ** y
+
+
+pairs = [[5, 2], [3, -1], [4, 3], [2, 0]]
+
+results = []
+
+for x, y in pairs:
+    if y < 0:
+        continue   # skip negative exponents
+    results.append(power(x, y))
+
+print(results)
