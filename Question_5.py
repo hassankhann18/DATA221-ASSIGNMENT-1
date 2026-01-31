@@ -12,7 +12,6 @@ def circleAreaCoverage(radiusOfCircle1, radiusOfCircle2):
     areaOfCircle1 = pi * radiusOfCircle1 * radiusOfCircle1
     areaOfCircle2 = pi * radiusOfCircle2 * radiusOfCircle2
 
-    # determine smaller and larger circle
     if areaOfCircle1 < areaOfCircle2:
         smaller = areaOfCircle1
         larger = areaOfCircle2
@@ -20,7 +19,6 @@ def circleAreaCoverage(radiusOfCircle1, radiusOfCircle2):
         smaller = areaOfCircle2
         larger = areaOfCircle1
 
-    # calculate percentage coverage
     percentage = (smaller / larger) * 100
 
     return percentage
